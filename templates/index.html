@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Recommender</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f6f8;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: #eee;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        input {
+            padding: 12px;
+            width: 350px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 12px 18px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: #444;
+        }
+
+        body.dark .toggle-btn {
+            background: #ddd;
+            color: #000;
+        }
+
+        .results {
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        body.dark .card {
+            background: #1e1e1e;
+            box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .score {
+            color: green;
+            margin-top: 5px;
+        }
+
+        .reason {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        body.dark .reason {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button class="toggle-btn" onclick="toggleDarkMode()" id="themeBtn">🌙</button>
+
+    <h1>Job Recommendation System</h1>
+
+    <form method="POST">
+        <input type="text" name="skills" placeholder="Enter skills (e.g., Python, SQL)">
+        <button type="submit">Get Jobs</button>
+    </form>
+
+    {% if results is not none %}
+
+    <div class="results">
+        <h2>Recommendations:</h2>
+
+        {% for _, row in results.iterrows() %}
+            <div class="card">
+                <div class="job-title">
+                    {{ row['job_role'] }}
+                </div>
+
+                <div class="score">
+                    Match: {{ (row['similarity']*100)|round(2) }}%
+                </div>
+
+                <div class="reason">
+                    Matched skills: {{ row['match_reason'] }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% endif %}
+
+    <!-- Script for Dark Mode Persistence -->
+    <script>
+        window.onload = function () {
+            const theme = localStorage.getItem("theme");
+            const btn = document.getElementById("themeBtn");
+
+            if (theme === "dark") {
+                document.body.classList.add("dark");
+                btn.innerText = "☀️";
+            }
+        };
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+
+            const btn = document.getElementById("themeBtn");
+
+            if (document.body.classList.contains("dark")) {
+                localStorage.setItem("theme", "dark");
+                btn.innerText = "☀️";
+            } else {
+                localStorage.setItem("theme", "light");
+                btn.innerText = "🌙";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+job_role,skills
+Data Analyst,"python, sql, excel, data visualization"
+Business Analyst,"analysis, communication, problem solving"
+Data Scientist,"python, machine learning, statistics, pandas"
+Machine Learning Engineer,"python, deep learning, tensorflow, nlp"
+AI Engineer,"python, ai, deep learning, computer vision"
+
+Frontend Developer,"html, css, javascript, react"
+Backend Developer,"python, django, sql, api"
+Full Stack Developer,"html, css, javascript, python, sql"
+Software Engineer,"java, data structures, algorithms, oop"
+DevOps Engineer,"linux, docker, kubernetes, ci/cd"
+Cloud Engineer,"aws, azure, cloud computing, networking"
+Cybersecurity Analyst,"network security, ethical hacking, cryptography"
+
+CAD Design Engineer,"autocad, solidworks, 3d modeling"
+Product Design Engineer,"cad, solidworks, product design"
+Thermal Engineer,"thermodynamics, heat transfer"
+Production Engineer,"manufacturing, quality control, industrial engineering"
+Automobile Engineer,"automobile, engines, vehicle dynamics"
+Maintenance Engineer,"equipment maintenance, troubleshooting"
+
+Site Engineer,"construction, site management"
+Structural Engineer,"structural analysis, design"
+Quantity Surveyor,"cost estimation, billing"
+Project Engineer,"project management, construction planning"
+
+Electrical Design Engineer,"circuit design, electrical systems"
+Power Systems Engineer,"power systems, electrical machines"
+Control Systems Engineer,"control systems, automation"
+Electronics Engineer,"electronics, circuit design, pcb"
+
+Embedded Systems Engineer,"microcontrollers, c programming, iot"
+VLSI Engineer,"vlsi, chip design, electronics"
+IoT Engineer,"iot, sensors, embedded systems"
+
+General Physician,"diagnosis, patient care"
+Surgeon,"surgery, medical procedures"
+Pediatrician,"child care, diagnosis"
+Pharmacist,"pharmacy, medicine, healthcare"
+Nurse,"patient care, healthcare"
+
+Chartered Accountant,"accounting, taxation, finance"
+Financial Analyst,"finance, excel, financial modeling"
+Investment Banker,"finance, valuation, markets"
+Banking Associate,"banking, finance, customer service"
+
+Digital Marketing Specialist,"seo, social media, content marketing"
+Content Writer,"writing, blogging, seo"
+Marketing Manager,"marketing, branding, strategy"
+SEO Specialist,"seo, keyword research, analytics"
+
+Teacher,"teaching, communication, subject knowledge"
+Professor,"research, teaching, subject expertise"
+Corporate Trainer,"training, presentation, communication"
+
+Lawyer,"legal research, law, drafting"
+Legal Advisor,"law, compliance, legal analysis"
+
+HR Manager,"recruitment, management, communication"
+HR Executive,"hr, recruitment, employee relations"
+
+Entrepreneur,"business, strategy, leadership"
+Operations Manager,"operations, management, logistics"
+
+UI/UX Designer,"figma, ui design, user research"
+Graphic Designer,"photoshop, illustrator, creativity"
+Animator,"animation, creativity, design"
+
+Journalist,"writing, reporting, communication"
+Public Relations Manager,"communication, branding, media"
+
+Hotel Manager,"hospitality, management, customer service"
+Chef,"cooking, kitchen management, food safety"
+
+Agricultural Engineer,"farming, irrigation, agriculture"
+Veterinary Doctor,"animal care, veterinary science"
+
+Fitness Trainer,"fitness, training, health"
+Sports Coach,"sports, training, strategy"
