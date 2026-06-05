@@ -1,6 +1,6 @@
-🤖 AI-Assisted Career Recommendation System
+🤖  Career Recommendation System
 
-An AI-powered career recommendation system that analyzes a user's skills and interests to suggest the most suitable career paths using Natural Language Processing (NLP) techniques.
+A career recommendation system that analyzes a user's skills and interests to suggest the most suitable career paths using Natural Language Processing (NLP) techniques.
 
 The system leverages TF-IDF Vectorization and Cosine Similarity to compare user profiles with career descriptions and generate personalized recommendations.
 
@@ -33,7 +33,7 @@ Jupyter Notebook| Development & Experimentation
 
 📂 Project Structure
 
-AI-Career-Recommendation-System/
+Job-Recommendation-System/
 │
 ├── data/
 │   └── careers.csv
@@ -202,7 +202,7 @@ Algorithms Used
 
 ⭐ Project Highlights
 
-- Built an AI-powered career recommendation engine using NLP techniques.
+- Built an career recommendation engine using NLP techniques.
 - Implemented TF-IDF Vectorization for textual feature extraction.
 - Applied Cosine Similarity for skill-to-career matching.
 - Designed a scalable content-based recommendation framework.
